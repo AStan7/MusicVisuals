@@ -23,14 +23,14 @@ public class MyVisual extends Visual
         startMinim();
                 
         // Call loadAudio to load an audio file to process 
-        //loadAudio("heroplanet.mp3");   
+        loadAudio("cars1.mp3");   
 
         
         // Call this instead to read audio from the microphone
-        startListening(); 
+        //startListening(); 
         
-        wf = new WaveForm(this);
-        abv = new AudioBandsVisual(this);
+        //wf = new WaveForm(this);
+        //abv = new AudioBandsVisual(this);
     }
 
     public void keyPressed()
@@ -41,6 +41,7 @@ public class MyVisual extends Visual
             getAudioPlayer().play();
         }
     }
+
 
     public void draw()
     {
@@ -61,5 +62,11 @@ public class MyVisual extends Visual
         calculateAverageAmplitude();        
         wf.render();
         abv.render();
+
+     
     }
+
 }
+
+
+  
